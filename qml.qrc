@@ -1,7 +1,7 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
-        <file>QCusTestWnd.qml</file>
         <file>QCusTestWndForm.ui.qml</file>
+        <file>QCusTestWnd.qml</file>
     </qresource>
 </RCC>

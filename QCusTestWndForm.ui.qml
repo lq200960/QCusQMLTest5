@@ -1,8 +1,8 @@
 ﻿import QtQuick 2.4
 
-Item {
-    width: 400
-    height: 400
+import QuickPaintedItemEx 1.0
+
+Rectangle {
 
     Text {
         id: text1
@@ -15,5 +15,12 @@ Item {
         verticalAlignment: Text.AlignVCenter
         horizontalAlignment: Text.AlignHCenter
         font.pixelSize: 22
+    }
+
+    CusHyperItem {
+        x: 10
+        y: 10
+        width: parent.width - 20
+        height: parent.height - 20
     }
 }
