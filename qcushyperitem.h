@@ -3,6 +3,7 @@
 
 #include <QQuickPaintedItem>
 #include <QPainter>
+#include <QPolygon>
 
 class QCusHyperItem : public QQuickPaintedItem
 {
@@ -15,10 +16,15 @@ public:
     void paint(QPainter* painter);
     int getPointCount() const;
     void setPointCount(const int& );
+protected:
+protected slots:
+    void dealCountChanged();
 signals:
     void countChanged();
 private:
     int iTotalPoint;
+    QPolygon polyPoints;
+    QPainterPath pointPath;
 };
 
 #endif // QCUSHYPERITEM_H

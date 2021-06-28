@@ -10,7 +10,7 @@ Rectangle {
         y: 103
         width: 136
         height: 89
-        text: qsTr("测试wnd!")
+        //text: qsTr("测试wnd!")
         font.bold: true
         verticalAlignment: Text.AlignVCenter
         horizontalAlignment: Text.AlignHCenter
@@ -18,9 +18,10 @@ Rectangle {
     }
 
     CusHyperItem {
-        x: 10
-        y: 10
-        width: parent.width - 20
-        height: parent.height - 20
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+        totalPoints:50
     }
 }
